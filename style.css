@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   background: lightblue;
   display: flex;
@@ -24,16 +28,21 @@ body {
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
+/* Aside
+========== */
 aside {
   background: #003147;
+  color: #fff;
   padding: 30px;
 }
 
+/* Profile section
+================== */
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .profile__img {
@@ -47,10 +56,30 @@ aside {
   font-weight: 700;
   line-height: 1.4em;
   padding: 30px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .profile__name span {
   font-size: 0.8em;
   font-weight: 300;
+}
+
+/* Contacts Section
+=================== */
+.contacts h3 {
+  margin: 40px 0 20px;
+  text-transform: uppercase;
+}
+
+.contacts ul li {
+  margin: 10px 0;
+}
+
+.contacts ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contacts ul li a i {
+  width: 30px;
+  color: #03a9f4;
 }
