@@ -124,3 +124,41 @@ main {
 }
 
 /* Experience Section */
+.experience h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.project__link {
+  width: 22%;
+}
+
+.project__description {
+  width: 75%;
+}
+
+.project__link a {
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.project__link a:hover {
+  text-decoration: underline;
+}
+
+.project__link a i {
+  font-size: 20px;
+  width: 33px;
+}
+
+.project__link p {
+  font-size: 0.8em;
+  color: #c1c1c1;
+}
