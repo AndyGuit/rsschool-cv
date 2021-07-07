@@ -26,13 +26,13 @@
   <body>
     <div class="page">
       <aside>
-        <section class="profile">
+        <header class="profile">
           <img class="profile__img" src="img/photo.jpg" alt="My Photo" />
           <h1 class="profile__name">
             Andrii Dmytryk<br /><span>FrontEnd Developer</span>
           </h1>
-        </section>
-        <section class="contacts">
+        </header>
+        <nav class="contacts">
           <h3>Contact Info</h3>
           <ul>
             <li>
@@ -60,7 +60,7 @@
               </a>
             </li>
           </ul>
-        </section>
+        </nav>
         <section class="skills">
           <h3>Skills</h3>
           <ul>
@@ -79,6 +79,10 @@
             <li>
               <i class="fa fa-github" aria-hidden="true"></i>
               Git
+            </li>
+            <li>
+              <i class="fa fa-language" aria-hidden="true"></i>
+              English (B1)
             </li>
           </ul>
         </section>
@@ -99,9 +103,9 @@
         </section>
         <section class="experience">
           <h3>experience</h3>
-          <div class="project">
+          <article class="project">
             <div class="project__link">
-              <a href="https://github.com/AndyGuit/toxin"
+              <a href="https://github.com/AndyGuit/toxin" target="blank"
                 ><i class="fa fa-github-square" aria-hidden="true"></i>Toxin</a
               >
               <p>Hotel Number Search</p>
@@ -109,10 +113,12 @@
             <div class="project__description">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-          </div>
-          <div class="project">
+          </article>
+          <article class="project">
             <div class="project__link">
-              <a href="https://github.com/AndyGuit/frontend-mentor-challenges"
+              <a
+                href="https://github.com/AndyGuit/frontend-mentor-challenges"
+                target="blank"
                 ><i class="fa fa-github-square" aria-hidden="true"></i
                 >FrontEnd</a
               >
@@ -120,6 +126,18 @@
             </div>
             <div class="project__description">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </article>
+        </section>
+        <section class="education">
+          <h3>Education</h3>
+          <div class="education__block">
+            <div class="education__years">
+              <h5>2008 - 2012</h5>
+            </div>
+            <div class="education__text">
+              <h4>Kherson Maritime College</h4>
+              <p>Electrical Engineering</p>
             </div>
           </div>
         </section>
