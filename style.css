@@ -33,7 +33,11 @@ body {
   margin: 50px;
   background: #fff;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: 1fr 2fr; */
+  grid-template-areas:
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,6 +47,7 @@ aside {
   background: #003147;
   color: #fff;
   padding: 30px;
+  grid-area: aside;
 }
 
 /* Profile section
@@ -92,6 +97,10 @@ aside {
   color: #03a9f4;
 }
 
+.contacts a:hover {
+  color: #6a707a;
+}
+
 /* Skills Section
 ================= */
 .skills h3 {
@@ -109,11 +118,12 @@ aside {
 main {
   padding: 40px;
   color: #000;
+  grid-area: main;
 }
 
 /* About Me Section
 =================== */
-.about-me h3 {
+.about-me h2 {
   text-transform: uppercase;
   font-size: 1.5em;
   margin: 20px 0;
@@ -124,7 +134,7 @@ main {
 }
 
 /* Experience Section */
-.experience h3 {
+.experience h2 {
   text-transform: uppercase;
   font-size: 1.5em;
   margin: 20px 0;
@@ -165,7 +175,7 @@ main {
 
 /* Education Section
 ==================== */
-.education h3 {
+.education h2 {
   text-transform: uppercase;
   font-size: 1.5em;
   margin: 20px 0;
@@ -190,12 +200,44 @@ main {
   width: 75%;
 }
 
+/* Footer
+========= */
+footer {
+  background-color: #6a707a;
+  grid-area: footer;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 7px 0 3px;
+}
+
+.footer__github > a > img {
+  width: 40px;
+}
+
+.footer__rs-school > a > img {
+  width: 90px;
+}
+
+footer a > img:hover {
+  opacity: 0.5;
+}
+
 /* Media queries
 ================ */
 @media (max-width: 800px) {
   .page {
     margin: 10px;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: unset;
+  }
+  aside,
+  main,
+  footer {
+    grid-area: unset;
   }
 }
 
