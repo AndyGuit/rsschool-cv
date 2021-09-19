@@ -142,16 +142,13 @@ main {
 
 .project {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 20px 0;
 }
 
 .project__link {
-  width: 22%;
-}
-
-.project__description {
-  width: 75%;
+  max-width: 600px;
 }
 
 .project__link a {
@@ -168,9 +165,13 @@ main {
   width: 33px;
 }
 
-.project__link p {
+.project__technologies {
   font-size: 0.8em;
-  color: #c1c1c1;
+  color: #8a8a8a;
+}
+
+.project__link a img {
+  max-width: 100%;
 }
 
 /* Education Section
@@ -184,6 +185,10 @@ main {
 .education__block {
   display: flex;
   justify-content: space-between;
+}
+
+.education__block + .education__block {
+  margin-top: 20px;
 }
 
 .education__years {
@@ -203,7 +208,7 @@ main {
 /* Footer
 ========= */
 footer {
-  background-color: #6a707a;
+  background-color: #acd6e4;
   grid-area: footer;
 }
 
@@ -238,6 +243,13 @@ footer a > img:hover {
   main,
   footer {
     grid-area: unset;
+  }
+
+  nav,
+  section.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
