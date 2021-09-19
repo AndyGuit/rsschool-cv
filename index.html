@@ -19,6 +19,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Highlight JS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
     <!-- CSS Styles -->
     <link rel="stylesheet" href="style.css" />
     <title>Andrii Dmytryk | Frontend Developer</title>
@@ -94,6 +99,23 @@
             Self-taught developer. My goal is to achieve the level of
             proficiency that will allow to work independently in IT projects.
           </p>
+        </section>
+        <section class="code-samples">
+          <h2>Code Samples</h2>
+          <pre><code class="language-js">function bingo(ticket, win){
+  let myWins = 0;
+
+  ticket.forEach(ticket => {
+    for (let i = 0; i < ticket[0].length; i++) {
+      if (ticket[0].charCodeAt(i) === ticket[1]) {
+        myWins++;
+        break;
+      }
+    }
+  });
+
+  return myWins >= win ? 'Winner!' : 'Loser!';
+}</code></pre>
         </section>
         <section class="experience">
           <h2>experience</h2>
@@ -175,5 +197,9 @@
     </div>
 
     <!-- Page -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
