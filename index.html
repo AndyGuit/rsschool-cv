@@ -112,20 +112,24 @@
         </section>
         <section class="code-samples" id="code-samples">
           <h2>Code Samples</h2>
-          <pre><code class="language-js">function bingo(ticket, win){
-  let myWins = 0;
+          <pre>
+            <code>
+              function bingo(ticket, win){
+                let myWins = 0;
 
-  ticket.forEach(ticket => {
-    for (let i = 0; i < ticket[0].length; i++) {
-      if (ticket[0].charCodeAt(i) === ticket[1]) {
-        myWins++;
-        break;
-      }
-    }
-  });
+                ticket.forEach(ticket => {
+                  for (let i = 0; i < ticket[0].length; i++) {
+                    if (ticket[0].charCodeAt(i) === ticket[1]) {
+                      myWins++;
+                      break;
+                    }
+                  }
+                });
 
-  return myWins >= win ? 'Winner!' : 'Loser!';
-}</code></pre>
+                return myWins >= win ? 'Winner!' : 'Loser!';
+              }
+            </code>
+          </pre>
         </section>
         <section class="experience" id="experience">
           <h2>experience</h2>

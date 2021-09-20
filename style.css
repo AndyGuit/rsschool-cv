@@ -140,12 +140,21 @@ main {
   margin-top: 20px;
 }
 
-/* About Me Section
-=================== */
+/* Code Samples Section
+======================= */
 .code-samples h2 {
   text-transform: uppercase;
   font-size: 1.5em;
   margin: 20px 0;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-size: 14px;
+}
+
+pre code.hljs {
+  padding: 0;
 }
 
 /* Experience Section
