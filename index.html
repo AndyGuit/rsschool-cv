@@ -36,8 +36,18 @@
           <h1 class="profile__name">
             Andrii Dmytryk<br /><span>FrontEnd Developer</span>
           </h1>
+          <nav class="menu">
+            <div class="menu__icon"><span></span></div>
+            <ul>
+              <li><a href="#contacts">Contacts</a></li>
+              <li><a href="#about-me">About Me</a></li>
+              <li><a href="#code-samples">Code Samples</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+            </ul>
+          </nav>
         </header>
-        <nav class="contacts">
+        <div class="contacts" id="contacts">
           <h3>Contact Info</h3>
           <ul>
             <li>
@@ -65,7 +75,7 @@
               </a>
             </li>
           </ul>
-        </nav>
+        </div>
         <section class="skills">
           <h3>Skills</h3>
           <ul>
@@ -93,14 +103,14 @@
         </section>
       </aside>
       <main>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
           <h2>About Me</h2>
           <p>
             Self-taught developer. My goal is to achieve the level of
             proficiency that will allow to work independently in IT projects.
           </p>
         </section>
-        <section class="code-samples">
+        <section class="code-samples" id="code-samples">
           <h2>Code Samples</h2>
           <pre><code class="language-js">function bingo(ticket, win){
   let myWins = 0;
@@ -117,7 +127,7 @@
   return myWins >= win ? 'Winner!' : 'Loser!';
 }</code></pre>
         </section>
-        <section class="experience">
+        <section class="experience" id="experience">
           <h2>experience</h2>
           <div class="project">
             <div class="project__link">
@@ -158,7 +168,7 @@
             </div>
           </div>
         </section>
-        <section class="education">
+        <section class="education" id="education">
           <h2>Education</h2>
           <div class="education__block">
             <div class="education__years">
@@ -201,5 +211,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="app.js"></script>
   </body>
 </html>
