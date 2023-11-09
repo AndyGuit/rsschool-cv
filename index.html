@@ -9,21 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <!-- FontAwesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
       integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
     <!-- Highlight JS -->
     <link
       rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
-    />
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css" />
     <!-- CSS Styles -->
     <link rel="stylesheet" href="style.css" />
     <title>Andrii Dmytryk | Frontend Developer</title>
@@ -53,7 +50,7 @@
             <li>
               <a href="tel:+12345678910">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                +38 050 396 3331
+                +38&nbsp;050&nbsp;396&nbsp;3331
               </a>
             </li>
             <li>
@@ -117,7 +114,7 @@
               function bingo(ticket, win){
                 let myWins = 0;
 
-                ticket.forEach(ticket => {
+                ticket.forEach(ticket =&gt; {
                   for (let i = 0; i &lt; ticket[0].length; i++) {
                     if (ticket[0].charCodeAt(i) === ticket[1]) {
                       myWins++;
@@ -126,7 +123,7 @@
                   }
                 });
 
-                return myWins >= win ? 'Winner!' : 'Loser!';
+                return myWins &gt;= win ? 'Winner!' : 'Loser!';
               }
             </code>
           </pre>
